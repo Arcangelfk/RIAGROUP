@@ -2988,6 +2988,12 @@ img {
     display: none !important;
 }
 
+/* --------------------------------------------------------------------------
+   BOTTOM SHEET en móvil — variables de transformación
+   -------------------------------------------------------------------------- */
+/* En desktop el panel se desliza desde la derecha (translateX).
+   En móvil (≤768px) se sobreescribe con translateY desde abajo. */
+
 .cart-drawer-panel {
     width: 420px;
     max-width: 100vw;
@@ -2997,7 +3003,7 @@ img {
     flex-direction: column;
     box-shadow: -16px 0 60px rgba(11, 43, 29, 0.18);
     transform: translateX(100%);
-    transition: transform 0.38s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: transform 0.42s cubic-bezier(0.16, 1, 0.3, 1);
     overflow: hidden;
     flex-shrink: 0;
 }
@@ -3901,17 +3907,43 @@ img {
    -------------------------------------------------------------------------- */
 @media (max-width: 768px) {
 
-    /* Panel del carrito: ancho completo desde tablet */
+    /* ── Overlay: alinear al fondo para bottom sheet ── */
+    .cart-drawer-overlay {
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    /* ── Panel: bottom sheet que sube desde abajo ── */
     .cart-drawer-panel {
         width: 100vw !important;
         max-width: 100vw !important;
-        border-radius: 0;
-        box-shadow: 0 -8px 30px rgba(11, 43, 29, 0.2);
+        height: 92svh !important;       /* Ocupa 92% de la pantalla */
+        border-radius: 20px 20px 0 0;   /* Bordes superiores redondeados */
+        box-shadow: 0 -12px 48px rgba(11, 43, 29, 0.25);
+        transform: translateY(100%) !important;  /* Empieza fuera de la pantalla por abajo */
+        transition: transform 0.44s cubic-bezier(0.16, 1, 0.3, 1) !important;
     }
 
-    /* Header del carrito más compacto */
+    .cart-drawer-open .cart-drawer-panel {
+        transform: translateY(0) !important;     /* Sube hasta su posición */
+    }
+
+    /* ── Handle decorativo (pastilla) en la parte superior ── */
     .cart-drawer-header {
-        padding: 0.9rem 1rem;
+        padding: 0.6rem 1rem 0.85rem;
+        position: relative;
+    }
+
+    .cart-drawer-header::before {
+        content: '';
+        position: absolute;
+        top: 0.45rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40px;
+        height: 4px;
+        background: rgba(255, 255, 255, 0.4);
+        border-radius: 9999px;
     }
 
     .cart-drawer-close {
