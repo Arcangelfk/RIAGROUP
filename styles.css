@@ -2498,14 +2498,15 @@ img {
     height: 60px;
     border-radius: 50%;
     background-color: #25d366;
-    color: #ffffff;
+    color: #ffffff !important;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 2rem;
     box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
-    z-index: 999;
+    z-index: 9000;
     transition: var(--transition-smooth);
+    text-decoration: none;
 }
 
 .floating-whatsapp:hover {
@@ -2971,9 +2972,11 @@ img {
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     z-index: 10000;
+    display: flex;
+    justify-content: flex-end;
     opacity: 0;
-    transition: opacity 0.38s cubic-bezier(0.16, 1, 0.3, 1);
     pointer-events: none;
+    transition: opacity 0.38s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .cart-drawer-overlay.cart-drawer-open {
@@ -2982,17 +2985,13 @@ img {
 }
 
 .cart-drawer-overlay.hidden {
-    display: none;
+    display: none !important;
 }
 
 .cart-drawer-panel {
-    position: fixed;
-    top: 0;
-    right: 0;
     width: 420px;
     max-width: 100vw;
-    height: 100vh;
-    height: 100dvh;
+    height: 100%;
     background: #ffffff;
     display: flex;
     flex-direction: column;
@@ -3000,7 +2999,7 @@ img {
     transform: translateX(100%);
     transition: transform 0.38s cubic-bezier(0.16, 1, 0.3, 1);
     overflow: hidden;
-    z-index: 10001;
+    flex-shrink: 0;
 }
 
 .cart-drawer-open .cart-drawer-panel {
@@ -4182,19 +4181,25 @@ img {
     }
     .footer-legal { flex-wrap: wrap; justify-content: center; gap: 1rem; }
 
+    /* ── Carrito ── */
+    .cart-drawer-overlay { height: 100vh; }
+    .cart-drawer-panel { width: min(380px, 100vw); }
+
     /* ── Floating buttons ── */
     .floating-whatsapp {
-        bottom: 5.5rem;
-        right: 1rem;
-        width: 52px;
-        height: 52px;
-        font-size: 1.6rem;
+        bottom: 1.5rem;
+        right: 1.2rem;
+        width: 54px;
+        height: 54px;
+        font-size: 1.7rem;
+        z-index: 9000;
     }
     .scroll-top-btn {
-        bottom: 1rem;
-        left: 1rem;
-        width: 40px;
-        height: 40px;
+        bottom: 1.5rem;
+        left: 1.2rem;
+        width: 42px;
+        height: 42px;
+        z-index: 8999;
     }
 
     /* ── Modales ── */
@@ -4349,9 +4354,29 @@ img {
     .pdetail-topbar { padding: 0.7rem 0.9rem; }
     .pd-specs-table td { font-size: 0.82rem; padding: 0.65rem 0.85rem; }
 
+    /* ── Carrito móvil ── */
+    .cart-drawer-overlay { height: 100vh; }
+    .cart-drawer-panel {
+        width: 100vw;
+        max-width: 100vw;
+    }
+
     /* ── Floating buttons ── */
-    .floating-whatsapp { bottom: 1.2rem; right: 1rem; width: 48px; height: 48px; font-size: 1.5rem; }
-    .scroll-top-btn { bottom: 1.2rem; left: 1rem; width: 38px; height: 38px; font-size: 1rem; }
+    .floating-whatsapp {
+        bottom: 1.2rem;
+        right: 1.2rem;
+        width: 50px;
+        height: 50px;
+        font-size: 1.55rem;
+        z-index: 9000;
+    }
+    .scroll-top-btn {
+        bottom: 1.2rem;
+        left: 1.2rem;
+        width: 40px;
+        height: 40px;
+        z-index: 8999;
+    }
     .whatsapp-tooltip { display: none; }
 
     /* ── Modal ── */
