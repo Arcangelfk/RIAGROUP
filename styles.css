@@ -3926,3 +3926,438 @@ img {
     }
 }
 
+
+/* ==========================================================================
+   OVERLAY DEL MENÚ MÓVIL
+   ========================================================================== */
+.menu-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(11, 43, 29, 0.55);
+    backdrop-filter: blur(3px);
+    z-index: 998;
+    transition: opacity 0.3s ease;
+}
+
+.menu-overlay.active {
+    display: block;
+}
+
+/* Botón cerrar menú móvil (solo visible en móvil) */
+.mobile-nav-close {
+    display: none;
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+    background: var(--soft-green-bg);
+    border: 1px solid var(--border-color);
+    color: var(--primary-dark);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-fast);
+}
+
+.mobile-nav-close:hover {
+    background: var(--primary-green);
+    color: #fff;
+    border-color: var(--primary-green);
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN — COMPLETO PARA MÓVIL Y TABLET
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   BREAKPOINT: TABLET GRANDE (max-width: 1024px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+    .section { padding: 4rem 0; }
+    .section-title { font-size: 1.9rem; }
+
+    /* Header */
+    .nav-list { gap: 1.2rem; }
+    .nav-link { font-size: 0.85rem; }
+
+    /* Hero stats → 2x2 */
+    .hero-stats { grid-template-columns: repeat(2, 1fr); }
+
+    /* Categorías → 2 columnas */
+    .categories-grid { grid-template-columns: repeat(2, 1fr); }
+
+    /* Beneficios → 2 columnas */
+    .benefits-grid { grid-template-columns: repeat(2, 1fr); }
+
+    /* Marcas → 3 columnas */
+    .brands-grid { grid-template-columns: repeat(3, 1fr); }
+
+    /* Blog → 2 columnas */
+    .blog-grid { grid-template-columns: repeat(2, 1fr); }
+
+    /* Products → 3 columnas */
+    .products-grid-5 { grid-template-columns: repeat(3, 1fr); }
+
+    /* Sección sobre nosotros */
+    .about-img { height: 360px; }
+
+    /* Grid 2 cols → mantener pero ajustar gap */
+    .grid-2-cols { gap: 2rem; }
+}
+
+/* --------------------------------------------------------------------------
+   BREAKPOINT: TABLET (max-width: 768px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+
+    /* ── General ── */
+    html { font-size: 15px; }
+    .section { padding: 3.5rem 0; }
+    .section-title { font-size: 1.7rem; }
+    .section-subtitle { font-size: 1rem; margin-bottom: 2rem; }
+    .container { padding: 0 1rem; }
+
+    /* ── Top Bar ── */
+    .top-bar { display: none; }
+
+    /* ── Header / Navegación ── */
+    .main-header { position: sticky; top: 0; }
+
+    .mobile-toggle {
+        display: flex;
+        margin-left: 0.5rem;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: min(300px, 85vw);
+        height: 100vh;
+        background: #ffffff;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 5rem 2rem 2rem;
+        box-shadow: -6px 0 30px rgba(11,43,29,0.15);
+        transition: right 0.38s cubic-bezier(0.16, 1, 0.3, 1);
+        z-index: 999;
+        margin: 0;
+        overflow-y: auto;
+    }
+
+    .nav-menu.open { right: 0; }
+
+    .mobile-nav-close { display: flex; }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        width: 100%;
+    }
+
+    .nav-list li { width: 100%; }
+
+    .nav-link {
+        display: block;
+        font-size: 1rem;
+        padding: 0.85rem 0;
+        border-bottom: 1px solid var(--border-color);
+        width: 100%;
+    }
+
+    .nav-link::after { display: none; }
+
+    .logo-img { height: 44px; }
+    .brand-name { font-size: 1.1rem; }
+    .brand-slogan { font-size: 0.65rem; }
+
+    /* ── Hero ── */
+    .hero-section {
+        min-height: 100svh;
+        padding: 6rem 0 3rem;
+        text-align: center;
+    }
+
+    .hero-title { font-size: 2rem; line-height: 1.2; }
+    .hero-subtitle { font-size: 1rem; }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.9rem;
+    }
+    .hero-buttons .btn { width: 100%; justify-content: center; }
+
+    /* Stats → 2 columnas */
+    .hero-stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        padding: 1.2rem;
+    }
+    .stat-number { font-size: 1.5rem; }
+    .stat-icon { width: 44px; height: 44px; font-size: 1.1rem; }
+
+    /* ── Quiénes Somos ── */
+    .grid-2-cols {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .about-img { height: 280px; }
+    .contact-info-wrapper { padding-right: 0; }
+    .experience-badge {
+        bottom: 1rem;
+        right: 1rem;
+        padding: 0.85rem 1.2rem;
+    }
+    .exp-num { font-size: 1.7rem; }
+
+    /* ── Categorías ── */
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.2rem;
+    }
+    .cat-img-wrapper { height: 170px; }
+
+    /* ── Filtros del catálogo ── */
+    .simple-filter-bar {
+        flex-direction: column;
+        gap: 0.85rem;
+        padding: 1rem 1.2rem;
+    }
+    .filter-item { min-width: 100%; flex: 1 1 100%; }
+    .search-filter-item { flex: 1 1 100%; }
+    .reset-item { width: 100%; }
+    .btn-reset-filters { width: 100%; justify-content: center; }
+
+    /* ── Productos → 2 columnas ── */
+    .products-grid-5 { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+
+    /* ── Beneficios → 1 columna ── */
+    .benefits-grid { grid-template-columns: 1fr; gap: 1.2rem; margin-top: 2rem; }
+    .benefit-card { padding: 1.6rem 1.4rem; }
+
+    /* ── Marcas → 3 columnas ── */
+    .brands-grid { grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 2rem; }
+    .brand-box { padding: 1.2rem 0.8rem; }
+
+    /* ── Testimonios → 1 columna ── */
+    .testimonials-grid { grid-template-columns: 1fr; gap: 1.2rem; }
+
+    /* ── Blog → 1 columna ── */
+    .blog-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+
+    /* ── Ingenieros → 2 columnas ── */
+    .engineers-grid { grid-template-columns: repeat(2, 1fr); gap: 1.2rem; }
+
+    /* ── Contacto ── */
+    .form-row { grid-template-columns: 1fr; gap: 0; }
+    .contact-form-wrapper { padding: 1.8rem 1.2rem; }
+
+    /* ── Footer ── */
+    .footer-bottom-content {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+    .footer-legal { flex-wrap: wrap; justify-content: center; gap: 1rem; }
+
+    /* ── Floating buttons ── */
+    .floating-whatsapp {
+        bottom: 5.5rem;
+        right: 1rem;
+        width: 52px;
+        height: 52px;
+        font-size: 1.6rem;
+    }
+    .scroll-top-btn {
+        bottom: 1rem;
+        left: 1rem;
+        width: 40px;
+        height: 40px;
+    }
+
+    /* ── Modales ── */
+    .modal-overlay { padding: 0.5rem; }
+    .modal-card { border-radius: var(--radius-md); max-height: 95vh; }
+
+    /* ── Panel detalle de producto ── */
+    .pd-hero {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+    .pd-gallery { position: static; }
+    .pd-main-img { height: 280px; }
+    .pd-sections {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+    .pd-related-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 1rem;
+        gap: 0.85rem;
+    }
+    .pdetail-topbar { padding: 0.8rem 1rem; }
+    .pdetail-breadcrumb { display: none; }
+}
+
+/* --------------------------------------------------------------------------
+   BREAKPOINT: MÓVIL GRANDE (max-width: 640px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 640px) {
+
+    /* ── Hero ── */
+    .hero-title { font-size: 1.7rem; }
+    .hero-badge { font-size: 0.78rem; padding: 0.4rem 1rem; text-align: center; }
+
+    /* Stats → 1 columna */
+    .hero-stats { grid-template-columns: 1fr 1fr; gap: 0.8rem; padding: 1rem; }
+
+    /* ── Categorías → 1 columna ── */
+    .categories-grid { grid-template-columns: 1fr; gap: 1rem; }
+
+    /* ── Beneficios ── */
+    .benefits-grid { grid-template-columns: 1fr; }
+
+    /* ── Marcas → 2 columnas ── */
+    .brands-grid { grid-template-columns: repeat(2, 1fr); }
+
+    /* ── Ingenieros → 1 columna ── */
+    .engineers-grid { grid-template-columns: 1fr; }
+
+    /* ── Productos → 2 columnas ── */
+    .products-grid-5 { grid-template-columns: repeat(2, 1fr); gap: 0.85rem; }
+
+    /* ── Section tag más pequeño ── */
+    .section-tag { font-size: 0.75rem; padding: 0.35rem 0.9rem; }
+    .section-title { font-size: 1.55rem; }
+
+    /* ── Botones ── */
+    .btn-lg { padding: 0.9rem 1.5rem; font-size: 0.95rem; }
+
+    /* ── Footer grid → 1 columna ── */
+    .grid-4-cols { grid-template-columns: repeat(2, 1fr); }
+    .grid-3-cols { grid-template-columns: 1fr; }
+
+    /* ── Panel detalle ── */
+    .pd-related-grid { grid-template-columns: repeat(2, 1fr); }
+    .pd-title { font-size: 1.5rem; }
+    .pd-cta-group { flex-direction: column; }
+    .pd-btn-cotizar { flex: none; width: 100%; }
+}
+
+/* --------------------------------------------------------------------------
+   BREAKPOINT: MÓVIL PEQUEÑO (max-width: 480px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+
+    html { font-size: 14px; }
+    .section { padding: 2.8rem 0; }
+    .container { padding: 0 0.9rem; }
+
+    /* ── Hero ── */
+    .hero-section { padding: 5rem 0 2.5rem; }
+    .hero-title { font-size: 1.5rem; }
+    .hero-subtitle { font-size: 0.95rem; }
+
+    /* Stats → 2x2 compacto */
+    .hero-stats {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.65rem;
+        padding: 0.9rem;
+        border-radius: var(--radius-md);
+    }
+    .stat-card { flex-direction: column; align-items: center; text-align: center; gap: 0.5rem; }
+    .stat-icon { width: 38px; height: 38px; font-size: 1rem; }
+    .stat-number { font-size: 1.3rem; }
+    .stat-label { font-size: 0.72rem; }
+
+    /* ── Header ── */
+    .header-container { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+    .logo-img { height: 38px; }
+    .brand-name { font-size: 0.95rem; }
+    .brand-slogan { display: none; }
+
+    /* ── Categorías ── */
+    .categories-grid { grid-template-columns: 1fr; gap: 0.9rem; }
+    .cat-img-wrapper { height: 150px; }
+
+    /* ── Productos → 1 columna ── */
+    .products-grid-5 { grid-template-columns: 1fr; gap: 0.9rem; }
+
+    /* ── Marcas → 2 columnas ── */
+    .brands-grid { grid-template-columns: repeat(2, 1fr); gap: 0.85rem; }
+    .brand-box { padding: 1rem 0.7rem; }
+    .brand-placeholder-icon { font-size: 1.6rem; }
+    .brand-name-tag { font-size: 0.68rem; }
+
+    /* ── Filtros ── */
+    .simple-filter-bar { padding: 0.85rem; border-radius: var(--radius-md); }
+
+    /* ── Beneficios ── */
+    .benefit-card { padding: 1.4rem 1.1rem; }
+    .benefit-icon { width: 50px; height: 50px; font-size: 1.3rem; margin-bottom: 1rem; }
+
+    /* ── Testimonios ── */
+    .testimonial-card { padding: 1.4rem; }
+
+    /* ── Blog ── */
+    .blog-img-wrapper { height: 170px; }
+    .blog-content { padding: 1.1rem; }
+
+    /* ── Ingenieros ── */
+    .engineers-grid { grid-template-columns: 1fr; }
+    .engineer-avatar-wrapper { width: 120px; height: 120px; }
+    .engineer-img-circle { width: 106px; height: 106px; }
+
+    /* ── Formulario contacto ── */
+    .contact-form-wrapper { padding: 1.4rem 1rem; border-radius: var(--radius-md); }
+    .form-row { grid-template-columns: 1fr; }
+
+    /* ── Footer ── */
+    .grid-4-cols { grid-template-columns: 1fr; }
+    .footer-bottom-content { flex-direction: column; gap: 0.8rem; text-align: center; }
+    .footer-legal { flex-direction: column; gap: 0.5rem; }
+    .newsletter-form { flex-direction: column; gap: 0.6rem; }
+    .newsletter-form button { width: 100%; border-radius: var(--radius-md); height: auto; padding: 0.7rem; }
+
+    /* ── Panel detalle ── */
+    .pd-main-img { height: 220px; }
+    .pd-related-grid { grid-template-columns: 1fr; }
+    .pd-title { font-size: 1.3rem; }
+    .pdetail-topbar { padding: 0.7rem 0.9rem; }
+    .pd-specs-table td { font-size: 0.82rem; padding: 0.65rem 0.85rem; }
+
+    /* ── Floating buttons ── */
+    .floating-whatsapp { bottom: 1.2rem; right: 1rem; width: 48px; height: 48px; font-size: 1.5rem; }
+    .scroll-top-btn { bottom: 1.2rem; left: 1rem; width: 38px; height: 38px; font-size: 1rem; }
+    .whatsapp-tooltip { display: none; }
+
+    /* ── Modal ── */
+    .modal-card { max-height: 98vh; border-radius: var(--radius-sm); }
+
+    /* ── Section tags ── */
+    .section-tag { font-size: 0.7rem; padding: 0.3rem 0.8rem; }
+    .section-title { font-size: 1.4rem; }
+    .section-subtitle { font-size: 0.9rem; }
+}
+
+/* --------------------------------------------------------------------------
+   BREAKPOINT: MÓVIL MUY PEQUEÑO (max-width: 360px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 360px) {
+    html { font-size: 13px; }
+    .hero-title { font-size: 1.35rem; }
+    .hero-stats { grid-template-columns: 1fr; gap: 0.6rem; }
+    .stat-card { flex-direction: row; text-align: left; }
+    .products-grid-5 { grid-template-columns: 1fr; }
+    .brands-grid { grid-template-columns: repeat(2, 1fr); }
+    .categories-grid { grid-template-columns: 1fr; }
+    .engineers-grid { grid-template-columns: 1fr; }
+}
+

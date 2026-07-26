@@ -952,6 +952,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (mobileToggle) mobileToggle.addEventListener('click', toggleMenu);
     if (menuOverlay) menuOverlay.addEventListener('click', toggleMenu);
 
+    const mobileNavClose = document.getElementById('mobileNavClose');
+    if (mobileNavClose) mobileNavClose.addEventListener('click', toggleMenu);
+
     document.querySelectorAll('.nav-link').forEach(link => {
         link.addEventListener('click', (e) => {
             if (navMenu.classList.contains('open')) toggleMenu();
