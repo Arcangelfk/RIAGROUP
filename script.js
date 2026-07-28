@@ -29,8 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 actionType: 'Nutrición edáfica inmediata'
             },
             dosage: '200 - 400 kg/Ha según análisis de suelo y etapa fenológica del cultivo.',
-            price: 185000,
-            priceLabel: '$185.000',
             gallery: [
                 'https://cdn.shopify.com/s/files/1/0671/5958/8995/files/15-15-15.png?v=1765396379',
                 'https://cdn.shopify.com/s/files/1/0671/5958/8995/files/Nucleo_34_pastos.png?v=1765397696'
@@ -57,8 +55,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 actionType: 'Micoparasitismo y competencia de nicho'
             },
             dosage: '1.0 - 2.0 kg/Ha en drenche o fertirriego al momento del trasplante o inicio de lluvias.',
-            price: 98000,
-            priceLabel: '$98.000',
             gallery: [
                 'https://cdn.shopify.com/s/files/1/0671/5958/8995/files/abonissa-solido.png?v=1759596133'
             ]
@@ -84,8 +80,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 actionType: 'Inhibidor del transporte de electrones y biosíntesis de ergosterol'
             },
             dosage: '300 - 500 ml/Ha en aplicación foliar con volumen de agua adecuado.',
-            price: 312000,
-            priceLabel: '$312.000',
             gallery: [
                 'https://cdn.shopify.com/s/files/1/0671/5958/8995/files/IMAGENALTOSL.webp?v=1784839260',
                 'https://cdn.shopify.com/s/files/1/0671/5958/8995/files/AGRIMINS_CALCIO_BORO.png?v=1766779856'
@@ -112,8 +106,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 actionType: 'Agonista del receptor nicotínico de acetilcolina'
             },
             dosage: '250 - 400 ml/Ha en aspersión foliar o 1.5 ml/L de agua en riego.',
-            price: 275000,
-            priceLabel: '$275.000',
             gallery: [
                 'https://cdn.shopify.com/s/files/1/0671/5958/8995/files/ACAREX-1.webp?v=1776875785',
                 'https://cdn.shopify.com/s/files/1/0671/5958/8995/files/c.png?v=1759596286'
@@ -140,8 +132,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 actionType: 'Mejorador de la fertilidad biológica y física del suelo'
             },
             dosage: '1.0 - 3.0 kg por árbol en mantenimiento o 2 a 4 Toneladas/Ha en siembra.',
-            price: 55000,
-            priceLabel: '$55.000',
             gallery: [
                 'https://cdn.shopify.com/s/files/1/0671/5958/8995/files/Biorganicoscompost.png?v=1764385392'
             ]
@@ -167,8 +157,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 actionType: 'Neutralización del H+ y Al3+ en el complejo de cambio'
             },
             dosage: '1.0 - 3.0 Toneladas/Ha según capacidad tampón del suelo y análisis de laboratorio.',
-            price: 42000,
-            priceLabel: '$42.000',
             gallery: [
                 'https://cdn.shopify.com/s/files/1/0671/5958/8995/files/Abimgra_potasio.png?v=1765315493'
             ]
@@ -194,8 +182,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 actionType: 'Bioestimulación hormonal directa'
             },
             dosage: '1.0 - 2.0 L/Ha en aplicación foliar cada 15 a 20 días.',
-            price: 145000,
-            priceLabel: '$145.000',
             gallery: [
                 'https://cdn.shopify.com/s/files/1/0671/5958/8995/files/BETALGA.jpg?v=1759598978',
                 'https://cdn.shopify.com/s/files/1/0671/5958/8995/files/Agrimins_cosecha.png?v=1765556820'
@@ -222,8 +208,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 actionType: 'Inhibidor de la enzima EPSPS'
             },
             dosage: '1.0 - 2.5 kg/Ha según la densidad y especie de maleza a controlar.',
-            price: 320000,
-            priceLabel: '$320.000',
             gallery: [
                 'https://cdn.shopify.com/s/files/1/0671/5958/8995/files/MANUPLA.png?v=1759598476',
                 'https://cdn.shopify.com/s/files/1/0671/5958/8995/files/AGRIMINS-INICIO.png?v=1759596323'
@@ -250,8 +234,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 actionType: 'Estimulador de la liberación del ácido gamma-aminobutírico (GABA)'
             },
             dosage: '300 - 500 ml/Ha o 50 ml por caneca de 200 Litros de agua.',
-            price: 198000,
-            priceLabel: '$198.000',
             gallery: [
                 'https://cdn.shopify.com/s/files/1/0671/5958/8995/files/acarex.png?v=1768841055',
                 'https://cdn.shopify.com/s/files/1/0671/5958/8995/files/Acarex_2-430x430.webp?v=1771795091'
@@ -278,8 +260,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 actionType: 'Reducción drástica de la tensión superficial acuosa'
             },
             dosage: '50 - 100 ml por cada 200 Litros de agua de mezcla.',
-            price: 88000,
-            priceLabel: '$88.000',
             gallery: [
                 'https://cdn.shopify.com/s/files/1/0671/5958/8995/files/carbolac.png?v=1768842355'
             ]
@@ -305,8 +285,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 actionType: 'Inducción de síntesis enzimática de alfa-amilasa'
             },
             dosage: '10 - 30 g por cada 200 Litros de agua de aspersión.',
-            price: 125000,
-            priceLabel: '$125.000',
             gallery: [
                 'https://cdn.shopify.com/s/files/1/0671/5958/8995/files/HUMIN-1.jpg?v=1759596594'
             ]
@@ -332,8 +310,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 actionType: 'Absorción por vía foliar y estomática'
             },
             dosage: '0.5 - 1.0 kg/Ha en fertirriego o aspersión foliar.',
-            price: 165000,
-            priceLabel: '$165.000',
             gallery: [
                 'https://cdn.shopify.com/s/files/1/0671/5958/8995/files/Bacillus-subtillis-Bio-subtilis.jpg?v=1759596288'
             ]
@@ -442,15 +418,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const updateCartSummary = () => {
         const totalItems = getTotalItems();
-        const totalPrice = getTotalPrice();
         if (cartTotalQuantity) {
             cartTotalQuantity.textContent = `${totalItems} ítem${totalItems !== 1 ? 's' : ''}`;
         }
         if (cartHeaderCount) {
             cartHeaderCount.textContent = `(${totalItems} ítem${totalItems !== 1 ? 's' : ''})`;
-        }
-        if (cartTotalPrice) {
-            cartTotalPrice.textContent = formatCOP(totalPrice);
         }
     };
 
@@ -478,8 +450,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const prod = PRODUCTS_DATA.find(p => p.id === item.id);
             if (!prod) return;
 
-            const itemSubtotal = prod.price ? prod.price * item.qty : 0;
-
             const el = document.createElement('div');
             el.className = 'cart-item';
             el.setAttribute('data-cart-id', item.id);
@@ -491,10 +461,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p class="cart-item-name">${prod.name}</p>
                     <span class="cart-item-cat">${prod.category} &bull; ${prod.brand}</span>
                     <span class="cart-item-pres"><i class="fa-solid fa-box-archive"></i> ${prod.presentation}</span>
-                    <div class="cart-item-price-info">
-                        <span class="cart-unit-price">${prod.priceLabel}</span>
-                        <span class="cart-item-subtotal">Subtotal: <strong>${formatCOP(itemSubtotal)}</strong></span>
-                    </div>
                     <div class="cart-item-qty-row">
                         <button class="qty-btn qty-dec" data-id="${item.id}" aria-label="Disminuir cantidad">
                             <i class="fa-solid fa-minus"></i>
@@ -556,8 +522,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         pendingDeleteProdId = prodId;
 
-        const subtotal = prod.price ? prod.price * cartItem.qty : 0;
-
         if (confirmProductInfo) {
             confirmProductInfo.innerHTML = `
                 <div class="confirm-prod-chip">
@@ -565,10 +529,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="confirm-prod-details">
                         <strong class="confirm-prod-title">${prod.name}</strong>
                         <span class="confirm-prod-meta">${prod.presentation} &bull; ${cartItem.qty} unidad${cartItem.qty !== 1 ? 'es' : ''}</span>
-                        <div class="confirm-prod-price-row">
-                            <span class="confirm-unit-price">${prod.priceLabel} c/u</span>
-                            <span class="confirm-subtotal">Subtotal: <strong>${formatCOP(subtotal)}</strong></span>
-                        </div>
                     </div>
                 </div>
             `;
@@ -612,7 +572,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (cart.length === 0) return;
 
         const totalItems = getTotalItems();
-        const totalPrice = getTotalPrice();
 
         if (confirmClearSummary) {
             confirmClearSummary.innerHTML = `
@@ -621,12 +580,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         <i class="fa-solid fa-boxes-stacked"></i>
                     </div>
                     <div class="confirm-prod-details">
-                        <strong class="confirm-prod-title">Resumen de la orden a vaciar</strong>
+                        <strong class="confirm-prod-title">Resumen del carrito a vaciar</strong>
                         <span class="confirm-prod-meta">${totalItems} producto${totalItems !== 1 ? 's' : ''} en total</span>
-                        <div class="confirm-prod-price-row">
-                            <span class="confirm-unit-price">Valor acumulado:</span>
-                            <span class="confirm-subtotal"><strong>${formatCOP(totalPrice)}</strong></span>
-                        </div>
                     </div>
                 </div>
             `;
@@ -756,7 +711,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
 
-    // --- Construir y enviar mensaje de WhatsApp (COMPRA) ---
+    // --- Construir y enviar mensaje de WhatsApp (COTIZACIÓN DESDE EL CARRITO) ---
     const buildWhatsAppMessage = (clientData) => {
         const { name, phone, city, dept, farm, notes } = clientData;
 
@@ -764,46 +719,41 @@ document.addEventListener('DOMContentLoaded', () => {
         cart.forEach((item, index) => {
             const prod = PRODUCTS_DATA.find(p => p.id === item.id);
             if (prod) {
-                const subtotal = prod.price ? prod.price * item.qty : 0;
                 productLines += `\n${index + 1}. *${prod.name}*`;
-                productLines += `\n   - Presentacion: ${prod.presentation}`;
+                productLines += `\n   - Presentación: ${prod.presentation}`;
                 productLines += `\n   - Cantidad: ${item.qty} unidad(es)`;
-                productLines += `\n   - Precio Unitario: ${prod.priceLabel}`;
-                productLines += `\n   - Subtotal: ${formatCOP(subtotal)}`;
                 productLines += `\n   - Marca: ${prod.brand}\n`;
             }
         });
 
         const totalItems = getTotalItems();
-        const totalPrice = getTotalPrice();
 
         let message = `----------------------------------------\n`;
-        message += `*NUEVO PEDIDO DE COMPRA - RIAGROUP SAS*\n`;
-        message += `[TIPO: ORDEN DE COMPRA]\n`;
+        message += `*SOLICITUD DE COTIZACIÓN - RIAGROUP SAS*\n`;
+        message += `[TIPO: COTIZACIÓN DE PRODUCTOS]\n`;
         message += `----------------------------------------\n\n`;
-        message += `*DATOS DEL CLIENTE Y ENVIO*\n`;
+        message += `*DATOS DEL CLIENTE Y UBICACIÓN*\n`;
         message += `- *Nombre:* ${name}\n`;
-        message += `- *Telefono:* ${phone}\n`;
+        message += `- *Teléfono:* ${phone}\n`;
         message += `- *Municipio / Ciudad:* ${city}\n`;
         message += `- *Departamento:* ${dept}\n`;
-        if (farm) message += `- *Finca / Direccion:* ${farm}\n`;
+        if (farm) message += `- *Finca / Empresa:* ${farm}\n`;
         message += `\n`;
-        message += `*PRODUCTOS SELECCIONADOS*\n`;
+        message += `*PRODUCTOS SELECCIONADOS PARA COTIZAR*\n`;
         message += productLines;
         message += `\n`;
         message += `----------------------------------------\n`;
-        message += `- *Cantidad de productos:* ${totalItems} item(s)\n`;
-        message += `- *TOTAL A PAGAR:* ${formatCOP(totalPrice)}\n`;
+        message += `- *Total de productos seleccionados:* ${totalItems} ítem(s)\n`;
         message += `----------------------------------------\n`;
         if (notes) {
-            message += `\n*Notas de entrega:*\n${notes}\n`;
+            message += `\n*Notas / Observaciones:*\n${notes}\n`;
         }
-        message += `\nHola, deseo confirmar este pedido de compra para coordinar el pago y la entrega de los productos.`;
+        message += `\nHola, solicito que un asesor me envíe el valor y disponibilidad de estos productos seleccionados.`;
 
         return message;
     };
 
-    // --- Construir mensaje de WhatsApp (COTIZACIÓN) ---
+    // --- Construir mensaje de WhatsApp (COTIZACIÓN DESDE CONTACTO) ---
     const buildQuoteWhatsAppMessage = (quoteData) => {
         const { name, company, phone, email, category, messageText } = quoteData;
 
@@ -990,8 +940,6 @@ document.addEventListener('DOMContentLoaded', () => {
             card.className = 'pcard reveal active';
             card.setAttribute('data-id', prod.id);
 
-            const priceTag = prod.price ? prod.price : 'Consultar Precio';
-
             card.innerHTML = `
                 <span class="pcard-badge">${prod.badge}</span>
                 <div class="pcard-img-wrap">
@@ -1010,7 +958,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <span>Marca: <strong>${prod.brand}</strong></span>
                     </div>
                     <div class="pcard-footer">
-                        <span class="pcard-price">${prod.priceLabel}</span>
+                        <span class="pcard-quote-tag"><i class="fa-solid fa-file-invoice"></i> Cotizar</span>
                         <div class="pcard-actions">
                             <button class="pcard-icon-btn pcard-btn-cart" data-id="${prod.id}" title="Agregar al carrito de cotización" aria-label="Agregar al carrito">
                                 <i class="fa-solid fa-cart-plus"></i>
@@ -1134,8 +1082,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const related = PRODUCTS_DATA.filter(p => p.id !== prod.id && p.category === prod.category).slice(0, 4);
         const fallbackRelated = related.length < 4 ? PRODUCTS_DATA.filter(p => p.id !== prod.id).slice(0, 4) : related;
 
-        const priceDisplay = prod.priceLabel ? prod.priceLabel : 'Bajo Cotización Directa';
-
         modalProductContent.innerHTML = `
             <!-- Hero Grid: Galería + Información Principal -->
             <div class="pd-hero">
@@ -1172,14 +1118,14 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                     </div>
 
-                    <!-- Precio destacado -->
+                    <!-- Estado de Cotización -->
                     <div style="background:var(--soft-green-bg); border:1px solid rgba(45,106,79,0.18); padding:1rem 1.4rem; border-radius:12px; display:flex; align-items:center; justify-content:space-between;">
                         <div>
-                            <span style="font-size:0.78rem; font-weight:700; color:var(--text-muted); text-transform:uppercase; display:block;">Precio Estimado / Tarifa</span>
-                            <span style="font-family:var(--font-heading); font-size:1.4rem; font-weight:800; color:var(--accent-green);">${priceDisplay}</span>
+                            <span style="font-size:0.78rem; font-weight:700; color:var(--text-muted); text-transform:uppercase; display:block;">Modalidad de Solicitud</span>
+                            <span style="font-family:var(--font-heading); font-size:1.15rem; font-weight:800; color:var(--primary-dark);"><i class="fa-solid fa-file-invoice-dollar" style="color:var(--accent-green);"></i> Cotización por Asesor Técnico</span>
                         </div>
                         <span style="font-size:0.8rem; background:var(--primary-green); color:#fff; padding:0.3rem 0.8rem; border-radius:999px; font-weight:700;">
-                            <i class="fa-solid fa-truck-fast"></i> Envío Nacional
+                            <i class="fa-solid fa-truck-fast"></i> Cobertura Nacional
                         </span>
                     </div>
 

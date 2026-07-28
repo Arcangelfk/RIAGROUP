@@ -930,7 +930,7 @@
             <div class="cart-drawer-header">
                 <div class="cart-drawer-title">
                     <i class="fa-solid fa-cart-shopping"></i>
-                    <h3>Carrito de Compras</h3>
+                    <h3>Carrito de Cotización</h3>
                     <span class="cart-header-count" id="cartHeaderCount">(0 ítems)</span>
                 </div>
                 <button class="cart-drawer-close" id="closeCartDrawerBtn" aria-label="Cerrar Carrito">
@@ -949,12 +949,12 @@
                 <div class="cart-drawer-footer" id="cartDrawerFooter">
                     <div class="cart-summary-box">
                         <div class="cart-summary-row">
-                            <span>Total de Productos:</span>
+                            <span>Productos Seleccionados:</span>
                             <strong id="cartTotalQuantity">0 ítems</strong>
                         </div>
-                        <div class="cart-summary-row total-row">
-                            <span>TOTAL A PAGAR:</span>
-                            <strong id="cartTotalPrice" class="cart-total-price">$0</strong>
+                        <div class="cart-summary-notice">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <span>Un asesor agrónomo calculará y te enviará los precios de tu selección por WhatsApp.</span>
                         </div>
                     </div>
 
@@ -963,7 +963,7 @@
                             <i class="fa-solid fa-trash-can"></i> Vaciar
                         </button>
                         <button class="btn btn-green flex-1" id="proceedToCheckoutBtn">
-                            Finalizar Pedido <i class="fa-solid fa-arrow-right"></i>
+                            Solicitar Cotización <i class="fa-solid fa-arrow-right"></i>
                         </button>
                     </div>
                 </div>
@@ -975,13 +975,13 @@
                     <button class="checkout-back-btn" id="backToCartItemsBtn">
                         <i class="fa-solid fa-arrow-left"></i> Volver al Carrito
                     </button>
-                    <h4>Finalizar Pedido por WhatsApp</h4>
+                    <h4>Enviar Solicitud de Cotización por WhatsApp</h4>
                 </div>
 
                 <form id="cartCheckoutForm" class="cart-checkout-form">
                     <div class="checkout-notice">
                         <i class="fa-solid fa-shield-halved"></i>
-                        <p>Ingresa tus datos de envío para generar la orden oficial de compra y coordinar el pago por WhatsApp.</p>
+                        <p>Ingresa tus datos para generar la solicitud de cotización de tus productos y recibir la oferta directamente en WhatsApp.</p>
                     </div>
 
                     <div class="form-group-custom">
@@ -1012,12 +1012,12 @@
                     </div>
 
                     <div class="form-group-custom">
-                        <label for="cartClientNotes"><i class="fa-solid fa-comment-dots"></i> Notas sobre la entrega <small>(Opcional)</small></label>
-                        <textarea id="cartClientNotes" rows="2" placeholder="Ej: Entregar preferiblemente en horas de la mañana..."></textarea>
+                        <label for="cartClientNotes"><i class="fa-solid fa-comment-dots"></i> Notas sobre la entrega o requerimiento <small>(Opcional)</small></label>
+                        <textarea id="cartClientNotes" rows="2" placeholder="Ej: Requiero también asesoría técnica sobre aplicación..."></textarea>
                     </div>
 
                     <button type="submit" class="btn btn-whatsapp-checkout btn-block">
-                        <i class="fa-brands fa-whatsapp"></i> PAGAR Y CONFIRMAR VÍA WHATSAPP
+                        <i class="fa-brands fa-whatsapp"></i> SOLICITAR COTIZACIÓN VÍA WHATSAPP
                     </button>
                 </form>
             </div>
@@ -1028,7 +1028,7 @@
                 <div class="cart-empty-icon">
                     <i class="fa-solid fa-cart-flatbed"></i>
                 </div>
-                <h4>Tu carrito está vacío</h4>
+                <h4>Tu carrito de cotización está vacío</h4>
                 <p>Explora nuestro catálogo y agrega los insumos que necesitas para solicitar tu cotización formal.</p>
                 <button class="btn btn-green btn-sm" id="closeCartAndBrowseBtn">
                     <i class="fa-solid fa-store"></i> Explorar Catálogo
@@ -1044,9 +1044,9 @@
                 <i class="fa-solid fa-trash-can"></i>
             </div>
             <h4>¿Eliminar producto del carrito?</h4>
-            <p class="confirm-modal-desc">¿Estás seguro de que deseas quitar este producto de tu orden de compra?</p>
+            <p class="confirm-modal-desc">¿Estás seguro de que deseas quitar este producto de tu cotización?</p>
             <div class="confirm-product-info" id="confirmProductInfo">
-                <!-- Se llena dinámicamente con JS (nombre e imagen + precio) -->
+                <!-- Se llena dinámicamente con JS (nombre e imagen) -->
             </div>
             <div class="confirm-modal-actions">
                 <button type="button" class="btn btn-outline-secondary" id="cancelDeleteBtn">Cancelar</button>
@@ -1062,9 +1062,9 @@
                 <i class="fa-solid fa-broom"></i>
             </div>
             <h4>¿Vaciar todo el carrito?</h4>
-            <p class="confirm-modal-desc">¿Estás seguro de que deseas quitar todos los productos de tu orden de compra?</p>
+            <p class="confirm-modal-desc">¿Estás seguro de que deseas quitar todos los productos de tu cotización?</p>
             <div class="confirm-product-info" id="confirmClearSummary">
-                <!-- Se llena dinámicamente con JS (cantidad e importe total) -->
+                <!-- Se llena dinámicamente con JS (cantidad) -->
             </div>
             <div class="confirm-modal-actions">
                 <button type="button" class="btn btn-outline-secondary" id="cancelClearBtn">Cancelar</button>

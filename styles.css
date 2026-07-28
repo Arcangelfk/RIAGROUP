@@ -1146,6 +1146,19 @@ img {
     letter-spacing: -0.02em;
 }
 
+.pcard-quote-tag {
+    font-size: 0.76rem;
+    font-weight: 700;
+    color: var(--accent-green);
+    background: var(--soft-green-bg);
+    border: 1px solid rgba(45, 106, 79, 0.2);
+    padding: 0.25rem 0.6rem;
+    border-radius: var(--radius-full);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
 .pcard-actions {
     display: flex;
     align-items: center;
@@ -3275,26 +3288,22 @@ img {
     padding: 0.2rem 0;
 }
 
-.cart-summary-row.total-row {
-    border-top: 1px dashed rgba(27, 67, 50, 0.2);
-    margin-top: 0.5rem;
-    padding-top: 0.6rem;
-    font-weight: 700;
+.cart-summary-notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-size: 0.78rem;
     color: var(--primary-dark);
-    font-size: 0.9rem;
-    letter-spacing: 0.02em;
+    margin-top: 0.6rem;
+    padding-top: 0.6rem;
+    border-top: 1px dashed rgba(27, 67, 50, 0.2);
+    line-height: 1.35;
 }
 
-.cart-total-price {
-    font-family: var(--font-heading);
-    font-size: 1.3rem;
-    font-weight: 800;
-    color: var(--primary-green);
-    background: #fff;
-    padding: 0.2rem 0.75rem;
-    border-radius: 8px;
-    border: 1px solid rgba(27, 67, 50, 0.2);
-    box-shadow: 0 2px 8px rgba(27, 67, 50, 0.08);
+.cart-summary-notice i {
+    color: var(--accent-green);
+    margin-top: 0.15rem;
+    font-size: 0.9rem;
 }
 
 
