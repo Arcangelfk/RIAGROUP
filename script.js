@@ -958,7 +958,6 @@ document.addEventListener('DOMContentLoaded', () => {
                         <span>Marca: <strong>${prod.brand}</strong></span>
                     </div>
                     <div class="pcard-footer">
-                        <span class="pcard-quote-tag"><i class="fa-solid fa-file-invoice"></i> Cotizar</span>
                         <div class="pcard-actions">
                             <button class="pcard-icon-btn pcard-btn-cart" data-id="${prod.id}" title="Agregar al carrito de cotización" aria-label="Agregar al carrito">
                                 <i class="fa-solid fa-cart-plus"></i>
